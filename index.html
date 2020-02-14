@@ -21,7 +21,78 @@
         font-family: 'Press Start 2P', cursive;
     }
     
+    .rell {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+    
+    
+    
+    
+     .menu {
+            width: 30px;
+            height: 30px;
+            position: fixed;
+            top:11vh;
+            right:9.1vh;
+            border: 1px solid black;
+            border-radius: 100%;
+            z-index: 999;
+        }
+        .menubar {
+            width:70%;
+            height:2px;
+            background-color: black;
+                position: absolute;
+            z-index: 999;
 
+        }
+        #bar1 {
+     
+            top:10px;
+            left: 5px;
+        transition:all 0.3s ease;
+        -webkit-transition:all 0.3s ease;
+    
+        }
+        #bar2 {
+     
+            top:16px;
+            left: 3px;
+        transition:all 0.3s ease;
+        -webkit-transition:all 0.3s ease;
+            
+        }
+
+         .bar1 {
+     
+            top:14px !important;
+            left: 5px !important;
+            transform:rotate(45deg)!important;
+    
+        }
+        .bar2 {
+     
+            top:14px !important;
+            left: 3px !important;
+            transform:rotate(-45deg)!important;
+        }
+        
+        
+        
+        
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
                 
 @media only screen
 and (min-device-width:320px)
@@ -40,9 +111,46 @@ and (max-device-width:480px)
     }
     
     }
-              
+       
+    
+    
+    
 </style>
+
+<script>
+$( document ).ready(function() {
+
+    $(".menu").click(function(){
+        if($(".menu").attr("name")=="a") {
+            
         
+         $(".menu").attr("name","");
+            
+            $("#bar1").removeClass("bar1");
+            $("#bar2").removeClass("bar2");
+            
+        }
+        
+        else{
+            $(".menu").attr("name","a");
+    
+            $("#bar1").addClass("bar1");
+            $("#bar2").addClass("bar2");
+        
+        }
+    
+    })
+    
+    
+    
+});
+    
+</script>        
+    
+    
+    
+    
+    
 </head>
 <body>
     <div class="shlum"> shlum</div>
