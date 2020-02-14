@@ -30,9 +30,7 @@
         }
     
     
-    
-    
-     .menu {
+    .menu {
             width: 30px;
             height: 30px;
             position: fixed;
@@ -84,7 +82,15 @@
         
     
     
-    
+     .img1 {
+            width:50vw;
+            height: auto;
+            position: absolute;
+            left: 6vw;
+            top:20vh;
+            z-index: 0;
+        }
+        
     
     
     
@@ -110,6 +116,18 @@ and (max-device-width:480px)
         font-family: 'Press Start 2P', cursive;
     }
     
+    
+    .img1 {
+            width:50vw;
+            height: auto;
+            position: absolute;
+            left: 6vw;
+            top:20vh;
+            z-index: 0;
+        }
+    
+    
+    
     }
        
     
@@ -118,6 +136,7 @@ and (max-device-width:480px)
 </style>
 
 <script>
+    
 $( document ).ready(function() {
 
     $(".menu").click(function(){
@@ -145,6 +164,9 @@ $( document ).ready(function() {
     
 });
     
+    
+    
+    
 </script>        
     
     
@@ -166,7 +188,7 @@ $( document ).ready(function() {
 </div>
 </div>
     
-    
+<img class="img1" src="hahaha.gif"/>    
     
     
     </body>
